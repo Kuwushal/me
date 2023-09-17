@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/upload.css">
+    <title>Upload | Vivideo</title>
+    <link rel="shortcut icon" type="image" href="../assets/logo_transparent.png">
+
+</head>
+<body>
+        
+    <div class="navbar">
+        <nav>
+            <a href="profile.html">
+                <img src="../assets/zoro.png" alt="Image description" class="profile">
+            </a>
+
+            <div class="search-container">
+                <input type="text" placeholder="Search...">
+                <div class="search-icon">
+                    <img src="..//assets/search-icon-png-21.png" alt="Search Icon">
+                </div>
+            </div>
+
+            <ul class="nav-list">
+                <li class="nav-item  cool-text">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item  cool-text">
+                    <a href="category.html">Explore</a>
+                </li>
+                <li class="nav-item  cool-text">
+                    <a href="upload.html">Upload</a>
+                </li>
+                <li class="nav-item" id= "login-item">
+                    <a href="login.html">Login</a>
+                </li>
+            </ul>
+</nav>
+    </div>
+       
+                 <div class="container">
+            <h1><strong>Upload Your Video</strong></h1>
+            <form action="#" method="post" enctype="multipart/form-data">
+                <label for="video" class="custom-file-upload">
+                    <span>Choose Video File</span>
+                    <input type="file" id="video" name="video" accept="video/*" required>
+                </label>
+                
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" class="custom-input" required>
+                
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" class="custom-input" required></textarea>
+                
+                <label for="thumbnail" class="custom-file-upload">
+                    <span>Select Thumbnail</span>
+                    <input type="file" id="thumbnail" name="thumbnail" accept="image/*" required>
+                </label>
+                
+                <label for="audience">Audience:</label>
+                <select id="audience" name="audience" class="custom-select">
+                    <option value="public">Children only</option>
+                    <option value="private">Not for children</option>
+                    <option value="unlisted">All age group</option>
+                </select>
+                
+                <label for="privacy">Privacy:</label>
+                <select id="privacy" name="privacy" class="custom-select">
+                    <option value="public">Public</option>
+                    <option value="private">Private</option>
+                    <option value="unlisted">Unlisted</option>
+                </select>
+                
+                
+                <label for="categories">Categories:</label>
+                <select id="categories" name="categories" class="custom-select">
+                    <option value="music">Music</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="vlog">Vlog</option>
+                </select>
+                
+                <label for="captions" class="custom-file-upload">
+                    <span>Add Captions (SRT or VTT)</span>
+                    <input type="file" id="captions" name="captions" accept=".srt,.vtt">
+                </label>
+                
+                <div class="terms">
+                    <input type="checkbox" id="agree" name="agree" required>
+                    <label for="agree">I agree to the <a href="#" target="_blank">Terms and Conditions</a></label>
+                </div>
+                <input type="submit" value="Upload" class="custom-button">
+            </form>
+        </div>
+    </body>
+    </html>
+    
+    <footer>
+        <p>&copy; 2023 Vivideo. All rights reserved. | <a href="#">Privacy Policy</a> | 
+            <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
+

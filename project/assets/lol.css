@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Inconsolata&family=Poppins&display=swap');
+
+:root{
+    --primary-color: #191D88;
+    --secondary-color: black;
+}
+body{
+    background-color: #333;
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    align-items: center;
+    border-color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 10px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    position: relative;
+    margin: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+
+
+
+
+
+#login-item {
+    margin-left: auto; 
+}
+    
+nav ul li a:hover{
+    color: rgba(0, 0, 0, 0.062);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover::after{
+    width: 100%; 
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; 
+}
+
+header {
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    text-align: center;
+    padding: 100px 0; 
+}
+
+
+h1 {
+    font-size: 3rem;
+    margin-top: 30vh; 
+   
+    transition: opacity 1s;
+    opacity: 0; 
+}
+
+
+.category-text {
+    border-right: 1px solid #fff;
+    padding-right: 4px; 
+}
+
+header.active h1 {
+    opacity: 1;
+}
+
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #3498db;
+}
+
+
+.category {
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+.category:hover {
+    background-color: rgba(0, 0, 0, 0.7); 
+}
+
+.category {
+    
+    position: relative;
+    overflow: hidden; 
+}
+
+.category-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.3s; 
+}
+
+.category:hover .category-image {
+    opacity: 1;
+}
+
+.category-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.category h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.category p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.category a {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-icon {
+    padding: 5px;
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+
+footer {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    align-items: center;
+}
+
+footer p{
+    padding-left: 300px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: end;
+}   
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; 
+
+}
+
+footer  a:hover{
+    color: blue;
+    transition: color 0.3s ease;
+
+    
+  
+ 
+}
+
+footer a:hover::after{
+    width: 100%; 
+}

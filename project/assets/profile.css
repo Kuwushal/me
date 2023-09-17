@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Inconsolata&family=Poppins&display=swap');
+
+:root{
+    --primary-color: #191D88;
+    --secondary-color: black;
+}
+body{
+    background-color: #333;
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    align-items: center;
+    border-color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 10px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    position: relative;
+    margin: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+#login-item {
+    margin-left: auto; 
+}
+    
+nav ul li a:hover{
+    color: rgba(0, 0, 0, 0.062);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover::after{
+    width: 100%; 
+}
+
+.profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+
+.profile-container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.profile-image img {
+    width: 300px; 
+    height: auto; 
+    
+}
+
+.info-box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    width: 500px; 
+    margin: 0 auto;
+}
+
+.info-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-label {
+    font-weight: bold;
+    width: 150px; 
+}
+
+.info-value {
+    flex-grow: 1;
+    position: relative;
+}
+
+.info-value::after {
+    content: "";
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid black;
+}
+
+
+.edit-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px; 
+}
+
+.profile-actions ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+    padding: 30px;
+    list-style: none;
+}
+
+.profile-actions li {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+button {
+    display: block;
+    width: 500px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+
+.language {
+    background-color: #0073e6;
+    color: #fff;
+}
+
+.settings {
+    background-color: #e64d00;
+    color: #fff;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.location {
+    background-color: #ffcc00;
+    color: #333;
+}
+
+.your-uploads {
+    background-color: #009933;
+    color: #fff;
+}
+
+.sign-out {
+    background-color: #ff3300;
+    color: #fff;
+}
+
+
+button:hover {
+    background-color: #005bbf;
+}
+
+
+.video-history {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.video-history h2 {
+    font-size: 30px;
+    color: #333;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+.video img {
+    width: 350px;
+    height: 200px;
+    border: 1px solid black; 
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out; 
+}
+
+
+.video img:hover {
+    transform: scale(1.1); 
+}
+
+
+.channel-link {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: bold;
+}
+
+.channel-link:hover {
+    text-decoration: underline;
+}
+
+.views {
+    color: #888;
+}
+
+.video p {
+    font-size: 20px;
+    color: #333;
+    margin-top: 5px;
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-icon {
+    padding: 5px;
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+.move {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+
+.move-c {
+    max-width: 100%;
+    max-height: 100%;
+  object-fit: cover;
+}
+
+
+
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#move-toggle {
+    display: none;
+}
+
+
+#move-toggle:checked + .move {
+    display: flex;
+    
+}
+
+
+footer {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    align-items: center;
+}
+
+footer p{
+    padding-left: 300px;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: end;
+}   
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; 
+
+}
+
+footer  a:hover{
+    color: blue;
+    transition: color 0.3s ease;
+
+    
+  
+ 
+}
+
+footer a:hover::after{
+    width: 100%; 
+}

@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Inconsolata&family=Poppins&display=swap');
+
+:root{
+    --primary-color: #191D88;
+    --secondary-color: black;
+}
+body{
+    background-color: #333;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #333;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-right: 10px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 24px;
+    text-decoration: none;
+    position: relative;
+    margin: 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+
+
+
+
+
+#login-item {
+    margin-left: auto; 
+}
+    
+nav ul li a:hover{
+    color: rgba(0, 0, 0, 0.062);
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover::after{
+    width: 100%; 
+}
+ 
+.profile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
+
+.container {
+    padding-top: 40px;
+    background-color: #333;
+    padding: 50px;
+    margin: 0 auto;
+    border: 5px solid white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 1000px; 
+    box-sizing: border-box; 
+    margin-top: 40px;
+}
+
+h1 {
+    padding: 20px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input[type="file"],
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.terms a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+
+
+.custom-file-upload input[type="file"] {
+    display: none; 
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3; 
+}
+
+.custom-file-upload span {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.custom-file-upload input[type="file"]:focus + span,
+.custom-file-upload input[type="file"]:valid + span {
+    border-color: #0056b3;
+    color: #0056b3;
+}
+
+
+
+
+footer {
+    height: 40vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: black;
+    align-items: center;
+}
+
+footer p{
+    padding-left: 300px;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}   
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px; 
+
+}
+
+footer  a:hover{
+    color: blue;
+    transition: color 0.3s ease;
+
+    
+  
+ 
+}
+
+footer a:hover::after{
+    width: 100%; 
+}
+
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    width: 300px;
+}
+
+input[type="text"] {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.search-icon {
+    padding: 5px;
+}
+
+.search-icon img {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
